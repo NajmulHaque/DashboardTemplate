@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ProUI - Responsive Bootstrap Admin Template | DEMO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/sample.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2/dist/Chart.min.js"></script>
+  </head>
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="sample.html" class="site_title"><i class="fa fa-bolt mr-3" aria-hidden="true"></i><span><strong>Pro</strong>UI</span></a>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/john.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Najmul Haque</h2>
+                <style type="text/css">
+                  .profile_info a i{
+                    padding-top: 5%;
+                    padding-right: 10%;
+                    font-size: 15px;
+                  }
+                </style>
+                <a><i class="fa fa-user"></i><i class="fa fa-envelope"></i><i class="fa fa-cog"></i><i class="fa fa-sign-out"></i></a>
+              </div>
+              <section id="colorbox">
+                  <div class="container">
+                    <div class="row">
+                        <ul>
+                          <li id="child_colorbox" class="child_colorbox" onclick="green()"></li>
+                          <li id="child_colorbox1" class="child_colorbox"></li>
+                          <li id="child_colorbox2" class="child_colorbox"></li>
+                          <li id="child_colorbox3" class="child_colorbox"></li>
+                          <li id="child_colorbox4" class="child_colorbox"></li>
+                          <li id="child_colorbox5" class="child_colorbox"></li>
+                          <li id="child_colorbox6" class="child_colorbox"></li>
+                          <li id="child_colorbox7" class="child_colorbox"></li>
+                          <li id="child_colorbox8" class="child_colorbox"></li>
+                          <li id="child_colorbox9" class="child_colorbox"></li>
+                          <li id="child_colorbox10" class="child_colorbox"></li>
+                          <li id="child_colorbox11" class="child_colorbox"></li>
+                          <li id="child_colorbox12" class="child_colorbox"></li>
+                          <li id="child_colorbox13" class="child_colorbox"></li>
+                        </ul>
+                    </div>
+                  </div>
+              </section>
+              <div class="clearfix"></div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#">Dashboard</a></li>
+                      <li><a href="#">Dashboard2</a></li>
+                      <li><a href="#">Dashboard3</a></li>
+                      <!-- <li><a href="index3.html">Dashboard3</a></li> -->
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form.html">General Form</a></li>
+                      <li><a href="form_advanced.html">Advanced Components</a></li>
+                      <li><a href="form_validation.html">Form Validation</a></li>
+                      <li><a href="form_wizards.html">Form Wizard</a></li>
+                      <li><a href="form_upload.html">Form Upload</a></li>
+                      <li><a href="form_buttons.html">Form Buttons</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="general_elements.html">General Elements</a></li>
+                      <li><a href="media_gallery.html">Media Gallery</a></li>
+                      <li><a href="typography.html">Typography</a></li>
+                      <li><a href="icons.html">Icons</a></li>
+                      <li><a href="glyphicons.html">Glyphicons</a></li>
+                      <li><a href="widgets.html">Widgets</a></li>
+                      <li><a href="invoice.html">Invoice</a></li>
+                      <li><a href="inbox.html">Inbox</a></li>
+                      <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="tables.html">Tables</a></li>
+                      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="chartjs.html">Chart JS</a></li>
+                      <li><a href="chartjs2.html">Chart JS2</a></li>
+                      <li><a href="morisjs.html">Moris JS</a></li>
+                      <li><a href="echarts.html">ECharts</a></li>
+                      <li><a href="other_charts.html">Other Charts</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+                      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu" style="background: #f9fafc;">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+                <div class="nav toggle">          
+                    <a data-toggle="dropdown" aria-expanded="true">
+                      <i class="fa fa-wrench"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-custom dropdown-options">
+                      <li class="dropdown-header text-center">Header Style</li>
+                      <li>
+                        <div class="btn-group btn-group-justified btn-group-sm">
+                          <a href="#" class="btn btn-primary active" id="options-header-default">Light</a>
+                          <a href="#" class="btn btn-primary" id="options-header-inverse">Dark</a>
+                        </div>
+                      </li>
+                      <li class="dropdown-header text-center">Page Style</li>
+                      <li>
+                        <div class="btn-group btn-group-justified btn-group-sm">
+                          <a href="#" class="btn btn-primary active" id="options-main-style">Default</a>
+                          <a href="#" class="btn btn-primary" id="options-main-style-alt">Alternative</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+                <div class="nav toggle">
+                  <style type="text/css">
+                    #top-search{
+                      padding: 10px;
+                      margin: 0;
+                      font-size: 14px;
+                      background: 0 0;
+                      border: none;
+                      z-index: 2000;
+                      width: 100px;
+                    }
+                  </style>
+                  <a>
+                    <div class="form-group">
+                      <input type="text" id="top-search" name="top-search" class="form-control" placeholder="Search..">
+                    </div>
+                  </a>
+                </div>
+
+                <nav class="nav navbar-nav">
+                <ul class=" navbar-right">
+                  <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                      <img src="images/img.jpg" alt="">Najmul Haque
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="#"> Profile</a>
+                        <a class="dropdown-item"  href="#">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="#">Help</a>
+                      <a class="dropdown-item"  href="#"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+                  </li>
+  
+                  <li role="presentation" class="nav-item dropdown open">
+                    <a href="#" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false" onclick="App.sidebar('toggle-sidebar-alt', 'toggle-other');this.blur();">
+                      <i class='fa fa-share-alt'></i>
+                      <span class="label label-primary label-indicator animation-floating"></span>
+                      <span class="badge bg-green">4</span>
+                   </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>John Smith</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Film festivals used to be do-or-die moments for movie makers. They were where...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        <!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main" style="background: #eaedf1;">
+          <div class="" id="background_area">
+            <div class="page-title" id="background_header">
+              <div class="title_left">
+                <h1>Welcome <strong>Admin</strong><br> <small>You Look Awesome!</small></h1>
+              </div>
+
+              <div class="title_right">
+                <div class="container">
+                    <div class="col-md-12">
+                          <div class="row text-center">
+                              <div class="col-md-3 col-xs-3 col-sm-3 col-sm-3">
+                                <h2 class="animation-hatch">
+                                $<strong>93.7k</strong><br>
+                                <small><i class="fa fa-thumbs-o-up"></i> Great</small>
+                                </h2>
+                              </div>
+                              <div class="col-md-3 col-xs-3 col-sm-3 col-sm-3">
+                                <h2 class="animation-hatch">
+                                <strong>167k</strong><br>
+                                <small><i class="fa fa-heart-o"></i> Likes</small>
+                                </h2>
+                              </div>
+                              <div class="col-md-3 col-xs-3 col-sm-3 col-sm-3">
+                                <h2 class="animation-hatch">
+                                <strong>101</strong><br>
+                                <small><i class="fa fa-calendar-o"></i> Events</small>
+                                </h2>
+                              </div>
+                              <div class="col-md-3 col-xs-3 col-sm-3 col-sm-3 hidden-xs">
+                                <h2 class="animation-hatch">
+                                <strong>27° C</strong><br>
+                                <small><i class="fa fa-map-marker"></i> Sydney</small>
+                                </h2>
+                              </div>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row" >
+              <div class="col-md-12 col-sm-12" style="background: #eaedf1">
+                <div class="x_panel">
+                  <div id="feature-area" >
+                      <div class="container">
+                        <div class="row">
+                           <div class="col-md-3">
+                            <div id="item">
+                              <div class="item2">
+                                <a href="#">
+                                  <div>
+                                    <div class="row">
+                                      <div class="col-md-4" id="child_item">
+                                        <div style="background: #e67e22;" id="item-font"><i class="fa fa-file-text"></i></div>
+                                      </div>
+                                      <div class="col-md-8" id="child_item">
+                                        <h3>New Article</h3>
+                                        <p>Mountain Trip</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                           </div>
+                           <div class="col-md-3">
+                              <div id="item">
+                                <div class="item2">
+                                  <a href="#">
+                                    <div>
+                                      <div class="row">
+                                        <div class="col-md-4" id="child_item">
+                                          <div style="background: #27ae60" id="item-font"><i class="fa fa-usd"></i></div>
+                                        </div>
+                                        <div class="col-md-8" id="child_item">
+                                          <h3>+250</h3>
+                                          <p>Sales Today</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div id="item">
+                                <div class="item2">
+                                  <a href="#">
+                                     <div>
+                                       <div class="row">
+                                         <div class="col-md-4" id="child_item">
+                                           <div style="background: #e74c3c" id="item-font"><i class="fa fa-envelope"></i></div>
+                                         </div>
+                                         <div class="col-md-8" id="child_item">
+                                           <h3>5 Message</h3>
+                                           <p>Support Center</p>
+                                         </div>
+                                       </div>
+                                     </div>
+                                    </a>
+                                  </div>
+                                </div>
+                           </div>
+                           <div class="col-md-3">
+                              <div>
+                                <div>
+                                  <a href="#">
+                                     <div id="item">
+                                       <div class="row">
+                                         <div class="col-md-4" id="child_item">
+                                           <div style="background: #af64cc" id="item-font"><i class="fa fa-image"></i></div>
+                                         </div>
+                                         <div class="col-md-8" id="child_item">
+                                           <h3>+30 Photos</h3>
+                                           <p>gallery</p>
+                                         </div>
+                                       </div>
+                                     </div>
+                                 </a>
+                                </div>
+                              </div>   
+                           </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div id="feature-area2" style="margin: 20px 0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div id="item">
+                            <div class="item2">
+                                <a href="#">
+                                   <div>
+                                     <div class="row">
+                                       <div class="col-md-2" id="child_item">
+                                         <div class="bg-info" id="item-font2"><i class="fa fa-calendar-o"></i></div>
+                                       </div>
+                                       <div class="col-md-3" id="child_item">
+                                         <h3>Latest Sales</h3>
+                                         <p>per Hour</p>
+                                       </div>
+                                       <div class="col-md-6">
+                                         <div id="chartContainer" style="height: 120px; width: 220px;">
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                </a>
+                              </div>
+                            </div>  
+                        </div>
+                        <div class="col-md-6">
+                          <div id="item">
+                            <div class="item2">
+                                <a href="">
+                                   <div>
+                                     <div class="row">
+                                       <div class="col-md-2" id="child_item">
+                                         <div class="bg-info" id="item-font2"><i class="fa fa-image"></i></div>
+                                       </div>
+                                       <div class="col-md-4" id="child_item">
+                                         <h3>Our Brand</h3>
+                                         <p>popularity Over Time</p>
+                                       </div>
+                                       <div class="col-md-6" >
+                                         <div id="chartContainer2" style="height: 120px; width: 220px;">
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                               </a>
+                             </div>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+
+               <!-- Timeline aera start from below -->
+
+                  <div id="main_timeline_area">
+                      <div class="container">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div id="timeline_area">
+                                <div class="container-fluid">
+                                    <div class="row" id="header_timeline_area"> 
+                                      <div class="col-md-10 col-sm-10 col-xs-10" >
+                                        <h3>
+                                          Latest <strong>News</strong>
+                                          <small><a href="#"><strong>View all</strong></a></small>
+                                      </h3>
+                                      </div>
+                                      <div class="col-md-2 col-sm-2 col-xs-2" id="header_timeline_area2">
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-cog"></i></a>
+                                      </div>
+                                    </div>
+                                  <div class="row">
+                                    <div class="col-md-3 col-xs-3 col-sm-3"></div>
+                                    <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7">        
+                                      <div class="timeline-centered">
+                                      <article class="timeline-entry">
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>just now</span></time>
+                                          <div class="timeline-icon bg-info">
+                                            <i class="fa fa-plane"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                                    <p class="push-bit"><a href="page_ready_user_profile.php"><strong>Jordan Carter</strong></a></p>
+                                                    <p class="push-bit">The trip was an amazing and a life changing experience!!</p>
+                                                    <p class="push-bit mb-3"><a href="#" class="btn btn-sm btn-primary"><i class="fa fa-file pr-2"></i> Read the article</a></p>
+                                                    <div class="container-fluid">
+                                                        <div class="row" id="timeline_img">
+                                                            <div class="col-md-6"><img src="images/photo1.jpg" width="100%" height="100px"></div>
+                                                            <div class="col-md-6"><img src="images/photo22.jpg" width="100%" height="100px"></div>
+                                                        </div>
+                                                    </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                      <article class="timeline-entry">          
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>3 mins ago</span></time>
+                                          <div class="timeline-icon bg-danger">
+                                            <i class="fa fa-file-text"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                            <p class="push-bit"><a href="#"><strong>Administrator</strong></a></p>
+                                            <p class="push-bit">Free courses for all our customers at A1 Conference Room - 9:00 am tomorrow!</p>
+                                          </div>
+                                        </div>
+                                      </article>
+                                      <article class="timeline-entry">          
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>3 hours ago</span></time>
+                                          <div class="timeline-icon bg-info">
+                                            <i class="fa fa-glass"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                             <p class="push-bit"><a href="#"><strong>Ella Winter</strong></a></p>
+                                              <p class="push-bit">Happy Hour! Free drinks at <a href="#">Cafe-Bar</a> all day long!</p>
+                                              <div class="mapouter">
+                                                <div class="gmap_canvas">
+                                                  <iframe width="300" height="240" id="gmap_canvas" src="https://maps.google.com/maps?q=shuttle&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.divi-discounts.com"></a>
+                                                </div>
+                                                <style>
+                                                  .mapouter{position:relative;text-align:right;height:250px;width:300px;padding-top: 2%}
+                                                  .gmap_canvas {overflow:hidden;background:none!important;height:250px;width:300px;}
+                                                </style>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                      <article class="timeline-entry">
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>5 hours ago</span></time>
+                                          <div class="timeline-icon bg-info">
+                                            <i class="fa fa-cutlery"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                            <p class="push-bit">
+                                              <a href="#">
+                                                <strong>Patricia Woodsr</strong>
+                                              </a>
+                                            </p>
+                                            <p class="push-bit pb-3">Today I had the lunch of my life! It was delicious!
+                                            </p>
+                                            <img src="images/photo233.jpg" width="120px" height="80px">
+                                          </div>
+                                        </div>
+                                      </article>
+                                      <article class="timeline-entry">
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>2 days ago</span></time>
+                                          <div class="timeline-icon bg-danger">
+                                            <i class="fa fa-smile-o"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                                    <p class="push-bit"><a href="#"><strong>Administrator</strong></a></p>
+                                                    <p class="push-bit">To thank you all for your support we would like to let you know that you will receive free feature updates for life! You are awesome!</p>
+                                          </div>
+                                        </div>
+                                      </article>
+                                      <article class="timeline-entry">
+                                        <div class="timeline-entry-inner">
+                                          <time class="timeline-time" datetime="2014-01-10T03:45"><span>1 week ago</span></time>
+                                          <div class="timeline-icon bg-info">
+                                            <i class="fa fa-pencil"></i>
+                                          </div>
+                                          <div class="timeline-label" id="label">
+                                            <p class="push-bit">
+                                              <a href="#">
+                                                <strong>Nicole Ward</strong>
+                                              </a>
+                                            </p>
+                                            <p class="push-bit">Consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor. Vestibulum ullamcorper, odio sed rhoncus imperdiet, enim elit sollicitudin orci, eget dictum leo mi nec lectus. Nam commodo turpis id lectus scelerisque vulputate.
+                                            </p><br>
+                                            <p class="push-bit pb-3">Integer sed dolor erat. Fusce erat ipsum, varius vel euismod sed, tristique et lectus? Etiam egestas fringilla enim, id convallis lectus laoreet at. Fusce purus nisi, gravida sed consectetur ut, interdum quis nisi. Quisque egestas nisl id lectus facilisis scelerisque? Proin rhoncus dui at ligula vestibulum ut facilisis ante sodales! Suspendisse potenti. Aliquam tincidunt sollicitudin sem nec ultrices. Sed at mi velit. Ut egestas tempor est, in cursus enim venenatis eget! Nulla quis ligula ipsum.
+                                            </p>
+                                            <a href="#" type="button" class="btn btn-sm btn-default" style="text-decoration: none;background: lightgray">view more...</a>
+                                          </div>
+                                        </div>
+                                      </article>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                               </div>
+
+                               <div class="col-md-6">
+                                 <div id="sales_area">
+                                  <div class="container-fluid">
+                                   <div class="row" id="header_sales_area">  
+                                    <div class="col-md-10 col-sm-10 col-lg-10 col-xs-10" >
+                                      <h3>
+                                        Your <strong>VIP Plan</strong>
+                                        <small><a href="#"><strong>Upgrade</strong></a></small>
+                                      </h3>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2" id="header_sales_area2">
+                                      <a href="#"><i class="fa fa-pencil"></i></a>
+                                      <a href="#"><i class="fa fa-cog"></i></a>
+                                    </div>
+                                </div> 
+                                <div class="row" id="statistics_sales_area">
+                                  <div class="col-md-3">
+                                    <h3>
+                                    <strong>35</strong> <small>/50</small><br>
+                                    <small><i class="fa fa-folder-open-o"></i> Projects</small>
+                                  </h3>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <h3>
+                                    <strong>25</strong> <small>/100GB</small><br>
+                                    <small><i class="fa fa-hdd-o"></i> Storage</small>
+                                  </h3>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <h3>
+                                    <strong>65</strong> <small>/1K</small><br>
+                                    <small><i class="fa fa-building-o"></i> Clients</small>
+                                  </h3>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <h3>
+                                    <strong>10</strong> <small>/10K</small><br>
+                                    <small><i class="fa fa-envelope-o"></i> Emails</small>
+                                  </h3>
+                                  </div>
+                                </div>              
+                                  </div>
+                                 </div>
+                                 <div id="earning_area">
+                                  <div class="container-fluid">
+                                    <div class="row" id="image_earning_area">
+                                      <div class="col-md-12">
+                                        <div id="chartContainer3" style="height: 300px; width: 500px;">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" id="child_earning_area">
+                                  <div class="col-md-4">
+                                    <h3>
+                                    <strong>7,500</strong><br>
+                                    <small> Clients</small>
+                                  </h3>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <h3>
+                                    <strong>10,970</strong><br>
+                                    <small> Sales</small>
+                                  </h3>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <h3>
+                                    <strong>$31230</strong><br>
+                                    <small><i class="fa fa-envelope-o"></i> Earnings</small>
+                                  </h3>
+                                  </div>
+                                    </div>
+                                  </div>
+                                 </div>
+                                 <div id="weather_area">
+                                  <div class="container-fluid">
+                                    <div class="row" id="image_weather_area">
+                                      <div class="col-md-12">
+                                        <div id="child_image_weather_area">
+                                          <img src="images/photo1.jpg" width="100%">
+                                          <div id="overlayTex_area">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                                                  <h3>
+                                                    Weather <strong>Station</strong><br>
+                                                    <i class="fa fa-location-arrow"></i><small>The Mountain</small>
+                                                  </h3>
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-right" style="color: #fff; padding:40px;font-size: 28px"><i class="fa fa-sun-o animation-pulse"></i></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" id="child_weather_area">
+                                      <div class="col-md-3">
+                                        <h3>
+                                          <strong>10°</strong> <small>C</small><br>
+                                          <small> Sunny</small>
+                                        </h3>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <h3>
+                                          <strong>80</strong> <small>%</small><br>
+                                          <small> Humidity</small>
+                                        </h3>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <h3>
+                                          <strong>60 <small>km/h</small></strong><br>
+                                          <small> Wind</small>
+                                        </h3>
+                                      </div>
+                                      <div class="col-md-3">
+                                        <h3>
+                                          <strong>5</strong> <small>km</small><br>
+                                          <small> Visibility</small>
+                                        </h3>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 </div>
+                                 <div id="gallery_area">
+                                  <div class="container-fluid">
+                                    <div class="row" id="header_gallery_area">
+                                      <div class="col-md-12" >
+                                  <div id="child_header_gallery_area">
+                                    <h3>
+                                      Awesome <strong>Gallery</strong><br>
+                                      <small>4 Photos</small>
+                                    </h3>
+                                  </div>
+                                  <div id="child_header_gallery_area2">
+                                    <a href="#" class="bg-info" >
+                                      <span><i class="fa fa-picture-o"></i></span>
+                                    </a>
+                                  </div>
+                                      </div>
+                                    </div>
+                                    <div class="row" id="image_gallery_area">
+                                      <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <a href="images/photo15.jpg" title="Image Info">
+                                          <img src="images/photo15.jpg" width="100%" alt="image">
+                                        </a>
+                                      </div>
+                                      <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <a href="images/photo5.jpg" class="gallery-link" title="Image Info">
+                                          <img src="images/photo5.jpg" width="100%" alt="image">
+                                        </a>
+                                      </div>
+                                      <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <a href="images/photo6.jpg" class="gallery-link" title="Image Info">
+                                          <img src="images/photo6.jpg" width="100%" alt="image">
+                                        </a>
+                                      </div>
+                                      <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <a href="images/photo233.jpg" class="gallery-link" title="Image Info">
+                                          <img src="images/photo233.jpg" width="100%" alt="image">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 </div>
+
+
+                               </div>
+                          </div>
+                        </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+    <script type="text/javascript" src="js/sample.js"></script>
+    <script type="text/javascript" src="js/sample2.js"></script>
+    <script type="text/javascript" src="js/sample3.js"></script>
+    <!-- script for canvas js -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>

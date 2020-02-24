@@ -1,0 +1,15 @@
+#feature-area{
+	padding:30px 0;
+}
+#item{
+	background:#fff;
+
+}
+#item-font{
+	text-align:center;
+	padding:25px;
+}
+#feature-area #item i,#feature-area2 #item i{
+	font-size: 28px;
+	text-align:center;
+}
