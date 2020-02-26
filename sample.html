@@ -422,13 +422,12 @@
                                        <div class="col-md-2" id="child_item">
                                          <div class="bg-info" id="item-font2"><i class="fa fa-calendar-o"></i></div>
                                        </div>
-                                       <div class="col-md-3" id="child_item">
+                                       <div class="col-md-4" id="child_item">
                                          <h3>Latest Sales</h3>
                                          <p>per Hour</p>
                                        </div>
-                                       <div class="col-md-6">
-                                         <div id="chartContainer" style="height: 120px; width: 220px;">
-                                         </div>
+                                       <div class="col-md-6" style="text-align: right;">
+                                        <div id="sparkline"></div>  
                                        </div>
                                      </div>
                                    </div>
@@ -449,9 +448,8 @@
                                          <h3>Our Brand</h3>
                                          <p>popularity Over Time</p>
                                        </div>
-                                       <div class="col-md-6" >
-                                         <div id="chartContainer2" style="height: 120px; width: 220px;">
-                                         </div>
+                                       <div class="col-md-6" style="text-align: right;">
+                                         <div id="sparkline2"></div>
                                        </div>
                                      </div>
                                    </div>
@@ -469,8 +467,8 @@
                       <div class="container">
                           <div class="row">
                             <div class="col-md-6">
-                              <div id="timeline_area">
-                                <div class="container-fluid">
+                              <div id="timeline_area" style="background: 0 0">
+                                <div class="container p-3">
                                     <div class="row" id="header_timeline_area"> 
                                       <div class="col-md-10 col-sm-10 col-xs-10" >
                                         <h3>
@@ -478,12 +476,27 @@
                                           <small><a href="#"><strong>View all</strong></a></small>
                                       </h3>
                                       </div>
+                                      <style type="text/css">
+                                        #child_header_timeline_area2{
+                                          background: lightgray;
+                                          color: black;
+                                          text-align: center;
+                                          border-radius: 10%; 
+                                          padding-left: 15%; 
+                                        }
+                                        #child_header_timeline_area2 a i{
+                                          color: #222;
+                                          text-align: center;
+                                        }
+                                      </style>
                                       <div class="col-md-2 col-sm-2 col-xs-2" id="header_timeline_area2">
+                                        <div id="child_header_timeline_area2">
                                         <a href="#"><i class="fa fa-pencil"></i></a>
                                         <a href="#"><i class="fa fa-cog"></i></a>
+                                        </div>
                                       </div>
                                     </div>
-                                  <div class="row">
+                                  <div class="row bg-white">
                                     <div class="col-md-3 col-xs-3 col-sm-3"></div>
                                     <div class="col-md-7 col-xs-7 col-sm-7 col-lg-7">        
                                       <div class="timeline-centered">
@@ -598,8 +611,8 @@
                                </div>
 
                                <div class="col-md-6">
-                                 <div id="sales_area">
-                                  <div class="container-fluid">
+                                 <div id="sales_area" style="background: 0 0">
+                                  <div class="container p-3">
                                    <div class="row" id="header_sales_area">  
                                     <div class="col-md-10 col-sm-10 col-lg-10 col-xs-10" >
                                       <h3>
@@ -608,11 +621,13 @@
                                       </h3>
                                     </div>
                                     <div class="col-md-2 col-sm-2 col-lg-2 col-xs-2" id="header_sales_area2">
-                                      <a href="#"><i class="fa fa-pencil"></i></a>
-                                      <a href="#"><i class="fa fa-cog"></i></a>
+                                        <div id="child_header_timeline_area2">
+                                          <a href="#"><i class="fa fa-pencil"></i></a>
+                                          <a href="#"><i class="fa fa-cog"></i></a>
+                                        </div>
                                     </div>
                                 </div> 
-                                <div class="row" id="statistics_sales_area">
+                                <div class="row bg-white" id="statistics_sales_area">
                                   <div class="col-md-3">
                                     <h3>
                                     <strong>35</strong> <small>/50</small><br>
@@ -640,38 +655,64 @@
                                 </div>              
                                   </div>
                                  </div>
-                                 <div id="earning_area">
-                                  <div class="container-fluid">
+                                 <div id="earning_area" style="background: 0 0">
+                                  <div class="container p-3">
                                     <div class="row" id="image_earning_area">
-                                      <div class="col-md-12">
-                                        <div id="chartContainer3" style="height: 300px; width: 500px;">
+                                      <div class="col-md-12" >
+                                        <style type="text/css">
+                                          #lastyr strong{
+                                            color: #fff;
+                                            font-weight: 450;
+                                          }
+                                          #lastyr{
+                                            background: #1bbae1;
+                                            width: 100%;
+                                            height: 400px;
+                                            padding:20px;
+                                          }
+                                          #lastyr h3{
+                                            font-weight: 200;
+                                            font-size: 24px;
+                                            color: #eee;
+                                          }
+                                          #lastyr small{
+                                            color: #eee;
+                                          }
+                                        </style>
+                                        <div id="lastyr">
+                                          <h3>
+                                        <strong>Sales</strong> &amp; <strong>Earnings</strong><br>
+                                        <small>Last Year</small>
+                                        </h3>
+                                          <span id="linechart" data-type="line" data-resize="true" data-height="100" data-width="90%" data-line-width="2" data-line-color="#fff" data-spot-color="lightgray" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="6" data-data="[1560,1650,1320,1950,1800,2400,2100,2550,3300,3900,4200,4500]"></span>
+                                          <span id="linechart2" data-type="line" data-resize="true" data-height="100" data-width="100%" data-line-width="2" data-line-color="#222" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#222" data-spot-radius="5" data-data="[500,420,480,350,600,850,1100,950,1220,1300,1500,1700]"></span>
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="row" id="child_earning_area">
-                                  <div class="col-md-4">
-                                    <h3>
-                                    <strong>7,500</strong><br>
-                                    <small> Clients</small>
-                                  </h3>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <h3>
-                                    <strong>10,970</strong><br>
-                                    <small> Sales</small>
-                                  </h3>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <h3>
-                                    <strong>$31230</strong><br>
-                                    <small><i class="fa fa-envelope-o"></i> Earnings</small>
-                                  </h3>
-                                  </div>
+                                    <div class="row bg-white" id="child_earning_area">
+                                      <div class="col-md-4">
+                                        <h3>
+                                        <strong>7,500</strong><br>
+                                        <small> Clients</small>
+                                      </h3>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <h3>
+                                        <strong>10,970</strong><br>
+                                        <small> Sales</small>
+                                      </h3>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <h3>
+                                        <strong>$31230</strong><br>
+                                        <small><i class="fa fa-envelope-o"></i> Earnings</small>
+                                      </h3>
+                                      </div>
                                     </div>
                                   </div>
                                  </div>
-                                 <div id="weather_area">
-                                  <div class="container-fluid">
+                                 <div id="weather_area" style="background: 0 0">
+                                  <div class="container p-3">
                                     <div class="row" id="image_weather_area">
                                       <div class="col-md-12">
                                         <div id="child_image_weather_area">
@@ -692,7 +733,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="row" id="child_weather_area">
+                                    <div class="row bg-white" id="child_weather_area">
                                       <div class="col-md-3">
                                         <h3>
                                           <strong>10°</strong> <small>C</small><br>
@@ -720,46 +761,46 @@
                                     </div>
                                   </div>
                                  </div>
-                                 <div id="gallery_area">
-                                  <div class="container-fluid">
-                                    <div class="row" id="header_gallery_area">
-                                      <div class="col-md-12" >
-                                  <div id="child_header_gallery_area">
-                                    <h3>
-                                      Awesome <strong>Gallery</strong><br>
-                                      <small>4 Photos</small>
-                                    </h3>
-                                  </div>
-                                  <div id="child_header_gallery_area2">
-                                    <a href="#" class="bg-info" >
-                                      <span><i class="fa fa-picture-o"></i></span>
-                                    </a>
-                                  </div>
+                                 <div id="gallery_area" style="background: 0 0">
+                                    <div class="container p-3">
+                                      <div class="row bg-white" id="header_gallery_area">
+                                        <div class="col-md-12" >
+                                          <div id="child_header_gallery_area">
+                                            <h3>
+                                              Awesome <strong>Gallery</strong><br>
+                                              <small>4 Photos</small>
+                                            </h3>
+                                          </div>
+                                          <div id="child_header_gallery_area2">
+                                            <a href="#" class="bg-info" >
+                                              <span><i class="fa fa-picture-o"></i></span>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="row bg-white" id="image_gallery_area">
+                                        <div class="col-md-3 col-xs-6 col-sm-3">
+                                          <a href="images/photo15.jpg" title="Image Info">
+                                            <img src="images/photo15.jpg" width="100%" alt="image">
+                                          </a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 col-sm-3">
+                                          <a href="images/photo5.jpg" class="gallery-link" title="Image Info">
+                                            <img src="images/photo5.jpg" width="100%" alt="image">
+                                          </a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 col-sm-3">
+                                          <a href="images/photo6.jpg" class="gallery-link" title="Image Info">
+                                            <img src="images/photo6.jpg" width="100%" alt="image">
+                                          </a>
+                                        </div>
+                                        <div class="col-md-3 col-xs-6 col-sm-3">
+                                          <a href="images/photo233.jpg" class="gallery-link" title="Image Info">
+                                            <img src="images/photo233.jpg" width="100%" alt="image">
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
-                                    <div class="row" id="image_gallery_area">
-                                      <div class="col-md-3 col-xs-6 col-sm-3">
-                                        <a href="images/photo15.jpg" title="Image Info">
-                                          <img src="images/photo15.jpg" width="100%" alt="image">
-                                        </a>
-                                      </div>
-                                      <div class="col-md-3 col-xs-6 col-sm-3">
-                                        <a href="images/photo5.jpg" class="gallery-link" title="Image Info">
-                                          <img src="images/photo5.jpg" width="100%" alt="image">
-                                        </a>
-                                      </div>
-                                      <div class="col-md-3 col-xs-6 col-sm-3">
-                                        <a href="images/photo6.jpg" class="gallery-link" title="Image Info">
-                                          <img src="images/photo6.jpg" width="100%" alt="image">
-                                        </a>
-                                      </div>
-                                      <div class="col-md-3 col-xs-6 col-sm-3">
-                                        <a href="images/photo233.jpg" class="gallery-link" title="Image Info">
-                                          <img src="images/photo233.jpg" width="100%" alt="image">
-                                        </a>
-                                      </div>
-                                    </div>
-                                  </div>
                                  </div>
 
 
@@ -802,5 +843,8 @@
     <!-- script for canvas js -->
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <!-- script for spart js  -->
+    <script type="text/javascript" src="js/sparkline.min.js"></script>
+    <script type="text/javascript" src="js/sparkline.js"></script>
   </body>
 </html>

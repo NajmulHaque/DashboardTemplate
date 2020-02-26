@@ -127,7 +127,7 @@
     margin-top: 20px;
    }
    #header_gallery_area{
-    margin-bottom: 25px;
+    padding-bottom: 25px;
    }
    #image_gallery_area{
     padding: 20px 10px;
@@ -224,7 +224,7 @@
 
             .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
                 font-size: 15px;
-                font-weight: bold;
+                margin-top: 20px;
             }
 
             .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:last-child {
