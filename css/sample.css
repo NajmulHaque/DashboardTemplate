@@ -149,7 +149,7 @@
     text-align: center;
    }
    #child_header_gallery_area2 a i{
-    font-size: 25px;
+    font-size: 22px;
    }
     #child_image_weather_area{
         position: relative;
@@ -158,12 +158,13 @@
         position: absolute;
         background: rgba(0,0,0,.6);
         width: 100%;
+        height: 60%;
         left: 0%;
         top: 0%;
         transform: translate(-0%,-0%);
     }
     #overlayTex_area h3{
-        color: #fff;
+        color: #eee;
         font-size: 24px;
         padding: 15px;
     }

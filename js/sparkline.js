@@ -37,3 +37,50 @@ var Script = function () {
         });
     });
 }();
+
+$(document).ready(function () {
+    $('#counter').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+            $(this).html(Math.floor(now) + "K");
+            }
+        });
+    });
+    $('#counter2').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+            $(this).html(Math.floor(now) + "K");
+            }
+        });
+    });
+    $('#counter3').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+            $(this).html(Math.floor(now));
+            }
+        });
+    });
+    $('#counter4').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+            $(this).html(Math.floor(now) + "° C");
+            }
+        });
+    });
+});
